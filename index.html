@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Car Giveaway</title>
+    <meta name="description" content="">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://cdn.unpacker.org/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <video autoplay loop poster="img/bg.jpg" class="video-bg">
+        <source src="video/bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="section-container text-center">
+            <div class="page-header">
+                <p class="h1 text-capitalize">
+                    Car Giveaway
+                    <br>
+                    <small class="text-uppercase">
+                        Watch the video tutorial and follow the steps...
+                    </small>
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="video-container">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0TIIu9CERgI"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="h2">
+                Steps to Participate
+            </p>
+
+            <div class="step-container">
+                <div class="step-stack">
+                    <div class="step-circle">
+                        Step <span>1</span>
+                    </div>
+                </div>
+
+                <span class="step-context">
+                    Complete the steps presented in our <a href="#" target="_blank">Facebook Post</a>. <br>
+                    After you complete those steps move to Step 2.
+                </span>
+            </div>
+
+            <div class="step-container">
+                <div class="step-stack">
+                    <div class="step-circle">
+                        Step <span>2</span>
+                    </div>
+                </div>
+
+                <span class="step-context">
+                    After watching the video tutorial, click the "Participate" <br>
+                    button below and win your desired car!
+                </span>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-block btn-primary" onclick="window.App.locker.call()">
+                            Participate
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                &copy; 2015. All rights reserved.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.App = {
+            locker: function () {
+                alert('demo');
+            }
+        };
+    </script>
+
+    <script src="https://cdn.unpacker.org/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.unpacker.org/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
